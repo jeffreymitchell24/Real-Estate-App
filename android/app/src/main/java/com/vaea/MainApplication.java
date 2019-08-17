@@ -1,4 +1,4 @@
-package com.listingapp;
+package com.vaea;
 
 import android.app.Application;
 
@@ -25,9 +25,9 @@ import com.facebook.reactnative.androidsdk.FBSDKPackage;
 import com.facebook.appevents.AppEventsLogger;
 
 public class MainApplication extends MultiDexApplication implements ReactApplication {
-  
+
   private static CallbackManager mCallbackManager = CallbackManager.Factory.create();
-  
+
   protected static CallbackManager getCallbackManager() {
     return mCallbackManager;
   }
@@ -40,18 +40,10 @@ public class MainApplication extends MultiDexApplication implements ReactApplica
 
     @Override
     protected List<ReactPackage> getPackages() {
-      return Arrays.<ReactPackage>asList(
-          new MainReactPackage(),
-            new ImagePickerPackage(),
-            new MapsPackage(),
-            new FBSDKPackage(mCallbackManager),
-            new FastImageViewPackage(),
-            new VectorIconsPackage(),
-          new RNFirebasePackage(),
-          new RNFirebaseAuthPackage(),
-          new RNFirebaseFirestorePackage(),
-          new RNFirebaseStoragePackage()
-      );
+      return Arrays.<ReactPackage>asList(new MainReactPackage(), new ImagePickerPackage(), new MapsPackage(),
+          new FBSDKPackage(mCallbackManager), new FastImageViewPackage(), new VectorIconsPackage(),
+          new RNFirebasePackage(), new RNFirebaseAuthPackage(), new RNFirebaseFirestorePackage(),
+          new RNFirebaseStoragePackage());
     }
 
     @Override

@@ -48,7 +48,7 @@ const LoginStack = createStackNavigator(
     initialRouteName: "Welcome",
     headerMode: "float",
     navigationOptions: ({ navigation }) => ({
-      headerTintColor: "#21c064",
+      headerTintColor: "#cc9933",
       headerTitleStyle: styles.headerTitleStyle
     }),
     cardStyle: { backgroundColor: "#FFFFFF" }
@@ -68,7 +68,7 @@ const HomeStack = createStackNavigator(
 
     headerLayoutPreset: "center",
     navigationOptions: ({ navigation }) => ({
-      headerTintColor: "#21c064",
+      headerTintColor: "#cc9933",
       headerTitleStyle: styles.headerTitleStyle
     }),
     cardStyle: { backgroundColor: "#FFFFFF" }
@@ -88,7 +88,7 @@ const CollectionStack = createStackNavigator(
     headerLayoutPreset: "center",
     cardStyle: { backgroundColor: "#FFFFFF" },
     navigationOptions: ({ navigation }) => ({
-      headerTintColor: "#21c064",
+      headerTintColor: "#cc9933",
       headerTitleStyle: styles.headerTitleStyle
     })
   }
@@ -106,7 +106,7 @@ const SavedListingStack = createStackNavigator(
     headerLayoutPreset: "center",
     cardStyle: { backgroundColor: "#FFFFFF" },
     navigationOptions: ({ navigation }) => ({
-      headerTintColor: "#21c064",
+      headerTintColor: "#cc9933",
       headerTitleStyle: styles.headerTitleStyle
     })
   }
@@ -124,7 +124,7 @@ const SearchStack = createStackNavigator(
     headerLayoutPreset: "center",
     cardStyle: { backgroundColor: "#FFFFFF" },
     navigationOptions: ({ navigation }) => ({
-      headerTintColor: "#21c064",
+      headerTintColor: "#cc9933",
       headerTitleStyle: styles.headerTitleStyle
     })
   }

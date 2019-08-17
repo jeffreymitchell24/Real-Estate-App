@@ -1,70 +1,44 @@
 {
   "project_info": {
-    "project_number": "706061484183",
-    "firebase_url": "https://ios-app-templates.firebaseio.com",
-    "project_id": "ios-app-templates",
-    "storage_bucket": "ios-app-templates.appspot.com"
+    "project_number": "836143212770",
+    "firebase_url": "https://vaea-6327e.firebaseio.com",
+    "project_id": "vaea-6327e",
+    "storage_bucket": "vaea-6327e.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:706061484183:android:75277ea79fec2179",
+        "mobilesdk_app_id": "1:836143212770:android:986d2c19b97c381c",
         "android_client_info": {
-          "package_name": "com.listingapp"
+          "package_name": "com.vaea"
         }
       },
       "oauth_client": [
         {
-          "client_id": "706061484183-oq6rdp7kjje8v513potdjk1cruth0kge.apps.googleusercontent.com",
+          "client_id": "836143212770-751nq3bjci1rvmb9gbil000dr5p58965.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDfUhwskZ_-VrNfeJ51o1IawY1DjbWFp-Y"
+          "current_key": "AIzaSyB21hnoYxFqigDkRKHT9JwQNYaz_Yg2-Fc"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:706061484183:android:3f4fa551d34cc26f",
-        "android_client_info": {
-          "package_name": "com.restaurantapp"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "706061484183-oq6rdp7kjje8v513potdjk1cruth0kge.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDfUhwskZ_-VrNfeJ51o1IawY1DjbWFp-Y"
-        }
-      ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
+          "other_platform_oauth_client": [
+            {
+              "client_id": "836143212770-751nq3bjci1rvmb9gbil000dr5p58965.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "836143212770-ts4bn12dapmtrvmq2ds1n7t5u39bve01.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.vaea"
+              }
+            }
+          ]
         }
       }
     }

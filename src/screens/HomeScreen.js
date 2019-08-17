@@ -121,6 +121,7 @@ class HomeScreen extends React.Component {
     const data = [];
     querySnapshot.forEach(doc => {
       const listing = doc.data();
+
       if (this.state.savedListings.findIndex(k => k == doc.id) >= 0) {
         listing.saved = true;
       } else {
@@ -128,13 +129,13 @@ class HomeScreen extends React.Component {
       }
       data.push({ ...listing, id: doc.id });
     });
-
-    this.setState({
-      listings: data.slice(0, Configuration.home.initial_show_count),
-      allListings: data,
-      loading: false,
-      showedAll: data.length <= Configuration.home.initial_show_count
-    });
+    if (data.length > 0)
+      this.setState({
+        listings: data.slice(0, Configuration.home.initial_show_count),
+        allListings: data,
+        loading: false,
+        showedAll: data.length <= Configuration.home.initial_show_count
+      });
   };
 
   onSavedListingsCollectionUpdate = querySnapshot => {

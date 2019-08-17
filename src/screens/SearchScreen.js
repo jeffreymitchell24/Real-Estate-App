@@ -1,6 +1,6 @@
 import React from "react";
 import { FlatList, Text, View } from "react-native";
-import { ListItem, SearchBar } from "react-native-elements";
+import { ListItem, SearchBar, Button } from "react-native-elements";
 import firebase from "react-native-firebase";
 import { ListStyle } from "../AppStyles";
 import { Configuration } from "../Configuration";
@@ -45,13 +45,13 @@ class SearchScreen extends React.Component {
       page: 1,
       seed: 1,
       error: null,
-      refreshing: false
+      refreshing: false,
+      contractFilter: "Any"
     };
   }
   onSearch = text => {
     this.ref = firebase.firestore().collection("real_estate_listings");
     this.searchedText = text;
-
     this.unsubscribe = this.ref.onSnapshot(this.onCollectionUpdate);
   };
 
@@ -63,7 +63,12 @@ class SearchScreen extends React.Component {
         this.searchedText != null ? this.searchedText.toLowerCase() : "";
       var index = listing.name.toLowerCase().search(text);
       if (index != -1) {
-        data.push({ ...listing, id: doc.id });
+        if (this.state.contractFilter == "Any")
+          data.push({ ...listing, id: doc.id });
+        else {
+          if (listing.mapping["Contract"] === this.state.contractFilter)
+            data.push({ ...listing, id: doc.id });
+        }
       }
     });
 
@@ -129,13 +134,53 @@ class SearchScreen extends React.Component {
 
   render() {
     return (
-      <FlatList
-        data={this.state.data}
-        renderItem={this.renderItem}
-        keyExtractor={item => `${item.id}`}
-        initialNumToRender={5}
-        refreshing={this.state.refreshing}
-      />
+      <View style={{ flex: 1 }}>
+        <View
+          style={{
+            flexDirection: "row",
+            flex: 1,
+            justifyContent: "space-around",
+            alignItems: "center"
+          }}
+        >
+          <Button
+            fontSize={10}
+            title="3 months contract"
+            onPress={() => {
+              this.setState({ contractFilter: "3 months" }, () =>
+                this.onSearch(this.searchedText)
+              );
+            }}
+          />
+          <Button
+            fontSize={10}
+            title="6 months contract"
+            onPress={() => {
+              this.setState({ contractFilter: "6 months" }, () =>
+                this.onSearch(this.searchedText)
+              );
+            }}
+          />
+          <Button
+            fontSize={10}
+            title="12 months contract"
+            onPress={() => {
+              this.setState({ contractFilter: "12 months" }, () =>
+                this.onSearch(this.searchedText)
+              );
+            }}
+          />
+        </View>
+        <View style={{ flex: 9 }}>
+          <FlatList
+            data={this.state.data}
+            renderItem={this.renderItem}
+            keyExtractor={item => `${item.id}`}
+            initialNumToRender={5}
+            refreshing={this.state.refreshing}
+          />
+        </View>
+      </View>
     );
   }
 }

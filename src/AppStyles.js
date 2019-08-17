@@ -7,20 +7,20 @@ const numColumns = 2;
 
 export const AppStyles = {
   color: {
-    main: "#21c064",
+    main: "#cc9933",
     text: "#4b4f52",
     title: "#464646",
     subtitle: "#545454",
     categoryTitle: "#161616",
-    tint: "#21c064",
+    tint: "#cc9933",
     description: "#bbbbbb",
     filterTitle: "#8a8a8a",
-    starRating: "#21c064",
+    starRating: "#cc9933",
     location: "#a9a9a9",
     white: "white",
     facebook: "#4267b2",
     grey: "grey",
-    greenBlue: "#21c064",
+    greenBlue: "#cc9933",
     placeholder: "#a0a0a0",
     background: "#f2f2f2",
     blue: "#3293fe"
