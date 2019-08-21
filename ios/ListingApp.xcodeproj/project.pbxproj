@@ -59,6 +59,7 @@
 		C957AB41A4A64160A8139E5B /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B47D5F76DB474FC6BF7D82A0 /* Entypo.ttf */; };
 		E157B6C971D1466BA44AC460 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60365D2670764DADA392BB4F /* FontAwesome.ttf */; };
 		E1E0CEA1D7694CBD9289EA68 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6FB3C52275B94605BAC75A25 /* MaterialIcons.ttf */; };
+		E2E02D8F230DB16B0036AFDB /* Original on Transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = E2E02D65230DB16B0036AFDB /* Original on Transparent.png */; };
 		FBF5342BB4E44B45933F97C8 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB11BC4F95404399A1D25CFE /* Foundation.ttf */; };
 /* End PBXBuildFile section */
 
@@ -423,6 +424,7 @@
 		C863360C68134076A6F3BF39 /* libRNFirebase.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFirebase.a; sourceTree = "<group>"; };
 		DE6E3FEDF6F4444393348F0C /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		DED36F4B2F3246D593483399 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		E2E02D65230DB16B0036AFDB /* Original on Transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Original on Transparent.png"; sourceTree = "<group>"; };
 		FD5E58FEA8874F1CA97CC11E /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -567,6 +569,7 @@
 		13B07FAE1A68108700A75B9A /* ListingApp */ = {
 			isa = PBXGroup;
 			children = (
+				E2E02D65230DB16B0036AFDB /* Original on Transparent.png */,
 				84C269C62175541600B5BBA6 /* Noto Sans Bold.ttf */,
 				84C269C52175541600B5BBA6 /* Noto Sans.ttf */,
 				84C2697321753ED800B5BBA6 /* GoogleService-Info.plist */,
@@ -867,7 +870,8 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = F8VJ6YA5MU;
+						ProvisioningStyle = Automatic;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -1284,6 +1288,7 @@
 				69A65BD66078485198117E9C /* Ionicons.ttf in Resources */,
 				356A4E932A904D24BCAF7908 /* MaterialCommunityIcons.ttf in Resources */,
 				84C269C72175541700B5BBA6 /* Noto Sans.ttf in Resources */,
+				E2E02D8F230DB16B0036AFDB /* Original on Transparent.png in Resources */,
 				84C269C82175541700B5BBA6 /* Noto Sans Bold.ttf in Resources */,
 				E1E0CEA1D7694CBD9289EA68 /* MaterialIcons.ttf in Resources */,
 				5919BADF926B4D52A321CA92 /* Octicons.ttf in Resources */,
@@ -1517,10 +1522,11 @@
 			baseConfigurationReference = 8E295142377055F59D166237 /* Pods-ListingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = F8VJ6YA5MU;
 				GCC_NO_COMMON_BLOCKS = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1556,9 +1562,10 @@
 			baseConfigurationReference = 225428851CA2C1D258E660BA /* Pods-ListingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = F8VJ6YA5MU;
 				GCC_NO_COMMON_BLOCKS = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
