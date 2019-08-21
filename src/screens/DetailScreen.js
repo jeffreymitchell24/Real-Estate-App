@@ -36,6 +36,14 @@ class DetailsScreen extends React.Component {
         <HeaderButton
           customStyle={AppIcon.container}
           style={{ tintColor: AppStyles.color.tint }}
+          icon={AppIcon.images.compose}
+          onPress={() => {
+            //navigation.state.params.onPressReview();
+          }}
+        />
+        <HeaderButton
+          customStyle={AppIcon.container}
+          style={{ tintColor: AppStyles.color.tint }}
           icon={AppIcon.images.review}
           onPress={() => {
             navigation.state.params.onPressReview();
